@@ -59,6 +59,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\cloud.png" />
+    <Content Include="Assets\Images\island.png" />
+    <Content Include="Assets\Images\loading.jpg" />
+    <Content Include="Assets\Images\ocean.gif" />
+    <Content Include="Assets\Images\plane.png" />
+    <Content Include="Assets\Sounds\engine.wav" />
+    <Content Include="Assets\Sounds\explosion.wav" />
+    <Content Include="Assets\Sounds\yay.mp3" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -69,12 +77,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="Scripts\constants.js" />
+    <Content Include="Scripts\game.js" />
     <Content Include="Scripts\lib\jquery-2.1.1.min.js" />
-    <None Include="Scripts\_references.js" />
     <Content Include="Scripts\lib\easeljs-0.7.1.min.js" />
     <Content Include="Scripts\lib\preloadjs-0.4.1.min.js" />
+    <Content Include="Scripts\lib\r.js" />
     <Content Include="Scripts\lib\soundjs-0.5.2.min.js" />
     <Content Include="Scripts\lib\tweenjs-0.5.1.min.js" />
+    <Content Include="Scripts\managers\asset.js" />
+    <Content Include="Scripts\objects\cloud.js" />
+    <Content Include="Scripts\objects\gameobject.js" />
+    <Content Include="Scripts\objects\island.js" />
+    <Content Include="Scripts\objects\ocean.js" />
+    <Content Include="Scripts\objects\plane.js" />
+    <Content Include="Scripts\objects\scoreboard.js" />
+    <Content Include="Scripts\lib\require.js" />
+    <Content Include="Scripts\states\gameover.js" />
+    <Content Include="Scripts\states\menu.js" />
+    <Content Include="Scripts\states\play.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Styles\app.css" />
     <Content Include="Styles\reset.css" />
     <Content Include="Web.config" />
@@ -82,24 +104,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Sounds\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="Scripts\constants.ts" />
-    <TypeScriptCompile Include="Scripts\game.ts" />
-    <TypeScriptCompile Include="Scripts\managers\asset.ts" />
-    <TypeScriptCompile Include="Scripts\objects\cloud.ts" />
-    <TypeScriptCompile Include="Scripts\objects\gameobject.ts" />
-    <TypeScriptCompile Include="Scripts\objects\island.ts" />
-    <TypeScriptCompile Include="Scripts\objects\ocean.ts" />
-    <TypeScriptCompile Include="Scripts\objects\plane.ts" />
-    <TypeScriptCompile Include="Scripts\objects\scoreboard.ts" />
-    <TypeScriptCompile Include="Scripts\states\gameover.ts" />
-    <TypeScriptCompile Include="Scripts\states\menu.ts" />
-    <TypeScriptCompile Include="Scripts\states\play.ts" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
